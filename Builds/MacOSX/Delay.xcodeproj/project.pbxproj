@@ -826,7 +826,7 @@
 					"JucePlugin_Name=\\\"Delay\\\"",
 					"JucePlugin_Desc=\\\"Delay\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.bomb.best\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e696d78",
@@ -846,7 +846,7 @@
 					"JucePlugin_AUExportPrefix=DelayAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"DelayAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Delay",
+					"JucePlugin_CFBundleIdentifier=best.bomb.Delay",
 					"JucePlugin_AAXIdentifier=com.yourcompany.Delay",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -880,7 +880,7 @@
 				INSTALL_PATH = "@executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_HEADER_SEARCH_PATHS = "/Users/thomasphillips/workspace/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/thomasphillips/workspace/JUCE/modules /Users/thomasphillips/workspace/JUCE/modules/juce_audio_plugin_client/AU";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Delay;
+				PRODUCT_BUNDLE_IDENTIFIER = best.bomb.Delay;
 				PRODUCT_NAME = "Delay";
 				SKIP_INSTALL = YES;
 				USE_HEADERMAP = NO;
@@ -988,7 +988,7 @@
 					"JucePlugin_Name=\\\"Delay\\\"",
 					"JucePlugin_Desc=\\\"Delay\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.bomb.best\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e696d78",
@@ -1008,7 +1008,7 @@
 					"JucePlugin_AUExportPrefix=DelayAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"DelayAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Delay",
+					"JucePlugin_CFBundleIdentifier=best.bomb.Delay",
 					"JucePlugin_AAXIdentifier=com.yourcompany.Delay",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1046,7 +1046,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_HEADER_SEARCH_PATHS = "/Users/thomasphillips/workspace/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/thomasphillips/workspace/JUCE/modules /Users/thomasphillips/workspace/JUCE/modules/juce_audio_plugin_client/AU";
 				OTHER_LDFLAGS = "-bundle -lDelay";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Delay;
+				PRODUCT_BUNDLE_IDENTIFIER = best.bomb.Delay;
 				PRODUCT_NAME = "Delay";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1098,7 +1098,7 @@
 					"JucePlugin_Name=\\\"Delay\\\"",
 					"JucePlugin_Desc=\\\"Delay\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.bomb.best\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e696d78",
@@ -1118,7 +1118,7 @@
 					"JucePlugin_AUExportPrefix=DelayAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"DelayAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Delay",
+					"JucePlugin_CFBundleIdentifier=best.bomb.Delay",
 					"JucePlugin_AAXIdentifier=com.yourcompany.Delay",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1157,7 +1157,7 @@
 				MTL_HEADER_SEARCH_PATHS = "/Users/thomasphillips/workspace/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/thomasphillips/workspace/JUCE/modules /Users/thomasphillips/workspace/JUCE/modules/juce_audio_plugin_client/AU";
 				OTHER_LDFLAGS = "-bundle -lDelay";
 				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Delay;
+				PRODUCT_BUNDLE_IDENTIFIER = best.bomb.Delay;
 				PRODUCT_NAME = "Delay";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1209,7 +1209,7 @@
 					"JucePlugin_Name=\\\"Delay\\\"",
 					"JucePlugin_Desc=\\\"Delay\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.bomb.best\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e696d78",
@@ -1229,7 +1229,7 @@
 					"JucePlugin_AUExportPrefix=DelayAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"DelayAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Delay",
+					"JucePlugin_CFBundleIdentifier=best.bomb.Delay",
 					"JucePlugin_AAXIdentifier=com.yourcompany.Delay",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1264,7 +1264,7 @@
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_HEADER_SEARCH_PATHS = "/Users/thomasphillips/workspace/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/thomasphillips/workspace/JUCE/modules /Users/thomasphillips/workspace/JUCE/modules/juce_audio_plugin_client/AU";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Delay;
+				PRODUCT_BUNDLE_IDENTIFIER = best.bomb.Delay;
 				PRODUCT_NAME = "juce_vst3_helper";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1364,7 +1364,7 @@
 					"JucePlugin_Name=\\\"Delay\\\"",
 					"JucePlugin_Desc=\\\"Delay\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.bomb.best\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e696d78",
@@ -1384,7 +1384,7 @@
 					"JucePlugin_AUExportPrefix=DelayAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"DelayAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Delay",
+					"JucePlugin_CFBundleIdentifier=best.bomb.Delay",
 					"JucePlugin_AAXIdentifier=com.yourcompany.Delay",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1419,7 +1419,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_HEADER_SEARCH_PATHS = "/Users/thomasphillips/workspace/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/thomasphillips/workspace/JUCE/modules /Users/thomasphillips/workspace/JUCE/modules/juce_audio_plugin_client/AU";
 				OTHER_LDFLAGS = "-lDelay";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Delay;
+				PRODUCT_BUNDLE_IDENTIFIER = best.bomb.Delay;
 				PRODUCT_NAME = "Delay";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1470,7 +1470,7 @@
 					"JucePlugin_Name=\\\"Delay\\\"",
 					"JucePlugin_Desc=\\\"Delay\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.bomb.best\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e696d78",
@@ -1490,7 +1490,7 @@
 					"JucePlugin_AUExportPrefix=DelayAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"DelayAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Delay",
+					"JucePlugin_CFBundleIdentifier=best.bomb.Delay",
 					"JucePlugin_AAXIdentifier=com.yourcompany.Delay",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1530,7 +1530,7 @@
 				MTL_HEADER_SEARCH_PATHS = "/Users/thomasphillips/workspace/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/thomasphillips/workspace/JUCE/modules /Users/thomasphillips/workspace/JUCE/modules/juce_audio_plugin_client/AU";
 				OTHER_LDFLAGS = "-bundle -lDelay";
 				OTHER_REZFLAGS = "-d ppc_$ppc -d i386_$i386 -d ppc64_$ppc64 -d x86_64_$x86_64 -d arm64_$arm64 -I /System/Library/Frameworks/CoreServices.framework/Frameworks/CarbonCore.framework/Versions/A/Headers -I \"$(DEVELOPER_DIR)/Extras/CoreAudio/AudioUnits/AUPublic/AUBase\" -I \"$(DEVELOPER_DIR)/Platforms/MacOSX.platform/Developer/SDKs/MacOSX.sdk/System/Library/Frameworks/AudioUnit.framework/Headers\"";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Delay;
+				PRODUCT_BUNDLE_IDENTIFIER = best.bomb.Delay;
 				PRODUCT_NAME = "Delay";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1582,7 +1582,7 @@
 					"JucePlugin_Name=\\\"Delay\\\"",
 					"JucePlugin_Desc=\\\"Delay\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.bomb.best\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e696d78",
@@ -1602,7 +1602,7 @@
 					"JucePlugin_AUExportPrefix=DelayAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"DelayAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Delay",
+					"JucePlugin_CFBundleIdentifier=best.bomb.Delay",
 					"JucePlugin_AAXIdentifier=com.yourcompany.Delay",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1641,7 +1641,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_HEADER_SEARCH_PATHS = "/Users/thomasphillips/workspace/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/thomasphillips/workspace/JUCE/modules /Users/thomasphillips/workspace/JUCE/modules/juce_audio_plugin_client/AU";
 				OTHER_LDFLAGS = "-bundle -lDelay";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Delay;
+				PRODUCT_BUNDLE_IDENTIFIER = best.bomb.Delay;
 				PRODUCT_NAME = "Delay";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1693,7 +1693,7 @@
 					"JucePlugin_Name=\\\"Delay\\\"",
 					"JucePlugin_Desc=\\\"Delay\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.bomb.best\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e696d78",
@@ -1713,7 +1713,7 @@
 					"JucePlugin_AUExportPrefix=DelayAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"DelayAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Delay",
+					"JucePlugin_CFBundleIdentifier=best.bomb.Delay",
 					"JucePlugin_AAXIdentifier=com.yourcompany.Delay",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1747,7 +1747,7 @@
 				INFOPLIST_PREPROCESS = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_HEADER_SEARCH_PATHS = "/Users/thomasphillips/workspace/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/thomasphillips/workspace/JUCE/modules /Users/thomasphillips/workspace/JUCE/modules/juce_audio_plugin_client/AU";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Delay;
+				PRODUCT_BUNDLE_IDENTIFIER = best.bomb.Delay;
 				PRODUCT_NAME = "juce_vst3_helper";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1798,7 +1798,7 @@
 					"JucePlugin_Name=\\\"Delay\\\"",
 					"JucePlugin_Desc=\\\"Delay\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.bomb.best\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e696d78",
@@ -1818,7 +1818,7 @@
 					"JucePlugin_AUExportPrefix=DelayAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"DelayAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Delay",
+					"JucePlugin_CFBundleIdentifier=best.bomb.Delay",
 					"JucePlugin_AAXIdentifier=com.yourcompany.Delay",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1854,7 +1854,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_HEADER_SEARCH_PATHS = "/Users/thomasphillips/workspace/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/thomasphillips/workspace/JUCE/modules /Users/thomasphillips/workspace/JUCE/modules/juce_audio_plugin_client/AU";
 				OTHER_LDFLAGS = "-lDelay";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Delay;
+				PRODUCT_BUNDLE_IDENTIFIER = best.bomb.Delay;
 				PRODUCT_NAME = "Delay";
 				USE_HEADERMAP = NO;
 				VALID_ARCHS = "i386 x86_64 arm64 arm64e";
@@ -1905,7 +1905,7 @@
 					"JucePlugin_Name=\\\"Delay\\\"",
 					"JucePlugin_Desc=\\\"Delay\\\"",
 					"JucePlugin_Manufacturer=\\\"yourcompany\\\"",
-					"JucePlugin_ManufacturerWebsite=\\\"www.yourcompany.com\\\"",
+					"JucePlugin_ManufacturerWebsite=\\\"www.bomb.best\\\"",
 					"JucePlugin_ManufacturerEmail=\\\"\\\"",
 					"JucePlugin_ManufacturerCode=0x4d616e75",
 					"JucePlugin_PluginCode=0x4e696d78",
@@ -1925,7 +1925,7 @@
 					"JucePlugin_AUExportPrefix=DelayAU",
 					"JucePlugin_AUExportPrefixQuoted=\\\"DelayAU\\\"",
 					"JucePlugin_AUManufacturerCode=JucePlugin_ManufacturerCode",
-					"JucePlugin_CFBundleIdentifier=com.yourcompany.Delay",
+					"JucePlugin_CFBundleIdentifier=best.bomb.Delay",
 					"JucePlugin_AAXIdentifier=com.yourcompany.Delay",
 					"JucePlugin_AAXManufacturerCode=JucePlugin_ManufacturerCode",
 					"JucePlugin_AAXProductId=JucePlugin_PluginCode",
@@ -1960,7 +1960,7 @@
 				LLVM_LTO = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_HEADER_SEARCH_PATHS = "/Users/thomasphillips/workspace/JUCE/modules/juce_audio_processors/format_types/VST3_SDK $(SRCROOT)/../../JuceLibraryCode /Users/thomasphillips/workspace/JUCE/modules /Users/thomasphillips/workspace/JUCE/modules/juce_audio_plugin_client/AU";
-				PRODUCT_BUNDLE_IDENTIFIER = com.yourcompany.Delay;
+				PRODUCT_BUNDLE_IDENTIFIER = best.bomb.Delay;
 				PRODUCT_NAME = "Delay";
 				SKIP_INSTALL = YES;
 				USE_HEADERMAP = NO;
