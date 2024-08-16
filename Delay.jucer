@@ -2,7 +2,8 @@
 
 <JUCERPROJECT id="NimXW4" name="Delay" projectType="audioplug" useAppConfig="0"
               addUsingNamespaceToJuceHeader="0" jucerFormatVersion="1" bundleIdentifier="best.bomb.Delay"
-              companyWebsite="www.bomb.best">
+              companyWebsite="www.bomb.best" companyName="bombest" pluginName="layde"
+              pluginDesc="delay" pluginManufacturerCode="Bomb" pluginCode="Layd">
   <MAINGROUP id="VtpoOO" name="Delay">
     <GROUP id="{74CB8045-400C-5BB6-65E8-C3BFE36D9C0A}" name="Source">
       <FILE id="zvnIO6" name="PluginProcessor.cpp" compile="1" resource="0"
