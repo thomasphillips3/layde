@@ -56,11 +56,13 @@ public:
     void setStateInformation (const void* data, int sizeInBytes) override;
 
 private:
-    juce::AudioProcessorValueTreeState aptvs {
+    juce::AudioProcessorValueTreeState apvts {
         *this, nullptr, "Parameters", createParameterLayout()
     };
     
     juce::AudioProcessorValueTreeState::ParameterLayout createParameterLayout();
+    juce::AudioParameterFloat* gainParam;
+    
     //==============================================================================
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DelayAudioProcessor)
 };
