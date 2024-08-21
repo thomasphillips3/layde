@@ -119,7 +119,7 @@ void DelayAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, [[mayb
     for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
         buffer.clear (i, 0, buffer.getNumSamples());
 
-    float gainInDecibels = aptvs.getRawParameterValue("gain") -> load();
+    float gainInDecibels = aptvs.getRawParameterValue(gainParamID.getParamID()) -> load();
     float gain = juce::Decibels::decibelsToGain(gainInDecibels);
     for (int channel = 0; channel < totalNumInputChannels; ++channel) {
         auto* channelData = buffer.getWritePointer(channel);
@@ -168,7 +168,7 @@ juce::AudioProcessorValueTreeState::ParameterLayout DelayAudioProcessor::createP
     
     layout.add(
         std::make_unique<juce::AudioParameterFloat>(
-            juce::ParameterID { "gain", 1 },
+            gainParamID,
             "Output Gain",
             juce::NormalisableRange<float> { -12.0f, 12.0f },
             0.0f));
