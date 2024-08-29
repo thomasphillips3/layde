@@ -57,6 +57,7 @@
 		B0954708161578A0AEDE3D29 /* MetalKit.framework */ = {isa = PBXBuildFile; fileRef = 0DF865708B8C3E6853509E0C; settings = { ATTRIBUTES = (Weak, ); }; };
 		BED50DD086A21247829A876B /* Foundation.framework */ = {isa = PBXBuildFile; fileRef = BAB67500EDB46324E5D20E22; };
 		C463FB418CC5C1841644D464 /* VST3 Manifest Helper */ = {isa = PBXBuildFile; fileRef = F506F3EB9ED18172E49CB44B; };
+		C6C93699A70D03875E3BA4C9 /* Parameters.cpp */ = {isa = PBXBuildFile; fileRef = FD4971BEE004C0809B711DDE; };
 		CE326935F4874228832C6CE5 /* QuartzCore.framework */ = {isa = PBXBuildFile; fileRef = BBACCCA82BDADB001C0BBD93; };
 		DF2BA187B8A1ABF093F640B7 /* PluginEditor.cpp */ = {isa = PBXBuildFile; fileRef = 630FEFA1BE57629EF66D9B2A; };
 		E04C438A35D12DF523AFFB7F /* include_juce_events.mm */ = {isa = PBXBuildFile; fileRef = 2A0FFAC37DA10B44F69AB2AF; };
@@ -90,6 +91,7 @@
 		4D4A22C79B58C2B386B234A9 /* juce_events */ /* juce_events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_events; path = /Users/thomasphillips/workspace/JUCE/modules/juce_events; sourceTree = "<absolute>"; };
 		4FD71375264CEB80BB3C40F1 /* CoreAudio.framework */ /* CoreAudio.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreAudio.framework; path = System/Library/Frameworks/CoreAudio.framework; sourceTree = SDKROOT; };
 		51EEEBB42AA4EC2E2DC6F704 /* IOKit.framework */ /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = System/Library/Frameworks/IOKit.framework; sourceTree = SDKROOT; };
+		53D8D3B745095F01E63BD378 /* Parameters.h */ /* Parameters.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Parameters.h; path = ../../Source/Parameters.h; sourceTree = SOURCE_ROOT; };
 		58FBB6C295A5BD413976876B /* AudioToolbox.framework */ /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		5A3781A0CB30CEA8467A5E47 /* include_juce_graphics.mm */ /* include_juce_graphics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_graphics.mm; path = ../../JuceLibraryCode/include_juce_graphics.mm; sourceTree = SOURCE_ROOT; };
 		611681ACB60D66A4A8803259 /* juce_audio_utils */ /* juce_audio_utils */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_utils; path = /Users/thomasphillips/workspace/JUCE/modules/juce_audio_utils; sourceTree = "<absolute>"; };
@@ -136,6 +138,7 @@
 		FA620EC8A8F7B9390FF98294 /* juce_audio_formats */ /* juce_audio_formats */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_audio_formats; path = /Users/thomasphillips/workspace/JUCE/modules/juce_audio_formats; sourceTree = "<absolute>"; };
 		FADEFF599E68A56921A7DDB5 /* include_juce_gui_extra.mm */ /* include_juce_gui_extra.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_extra.mm; path = ../../JuceLibraryCode/include_juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
 		FC72387F73EFDFAFF70DE08C /* include_juce_core.mm */ /* include_juce_core.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_core.mm; path = ../../JuceLibraryCode/include_juce_core.mm; sourceTree = SOURCE_ROOT; };
+		FD4971BEE004C0809B711DDE /* Parameters.cpp */ /* Parameters.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Parameters.cpp; path = ../../Source/Parameters.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -271,6 +274,8 @@
 		837A007D2EDF7A0B1C205367 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FD4971BEE004C0809B711DDE,
+				53D8D3B745095F01E63BD378,
 				D0382BB8AAC5FCE291A71805,
 				A76D2D2C891FA1748372B640,
 				630FEFA1BE57629EF66D9B2A,
@@ -678,6 +683,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C6C93699A70D03875E3BA4C9,
 				4EE2B8962B3D53D414BD08E1,
 				DF2BA187B8A1ABF093F640B7,
 				567E9FC85E8108B482E5C339,

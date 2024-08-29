@@ -15,10 +15,10 @@ DelayAudioProcessor::DelayAudioProcessor() :
         BusesProperties()
             .withInput  ("Input",  juce::AudioChannelSet::stereo(), true)
             .withOutput ("Output", juce::AudioChannelSet::stereo(), true)
-        )
+        ),
+        params(apvts)
 {
-    auto* param = apvts.getParameter(gainParamID.getParamID());
-    gainParam = dynamic_cast<juce::AudioParameterFloat*>(param);
+    
 }
 
 DelayAudioProcessor::~DelayAudioProcessor()
@@ -90,8 +90,8 @@ void DelayAudioProcessor::changeProgramName (int index, const juce::String& newN
 //==============================================================================
 void DelayAudioProcessor::prepareToPlay (double sampleRate, int samplesPerBlock)
 {
-    // Use this method as the place to do any pre-playback
-    // initialisation that you need..
+    params.prepareToPlay(sampleRate);
+    params.reset();
 }
 
 void DelayAudioProcessor::releaseResources()
@@ -116,14 +116,16 @@ void DelayAudioProcessor::processBlock (juce::AudioBuffer<float>& buffer, [[mayb
     for (auto i = totalNumInputChannels; i < totalNumOutputChannels; ++i)
         buffer.clear (i, 0, buffer.getNumSamples());
 
-    float gainInDecibels = gainParam->get();
-    float gain = juce::Decibels::decibelsToGain(gainInDecibels);
-    for (int channel = 0; channel < totalNumInputChannels; ++channel) {
-        auto* channelData = buffer.getWritePointer(channel);
+    params.update();
+    
+    float* channelDataL = buffer.getWritePointer(0);
+    float* channelDataR = buffer.getWritePointer(1);
+    
+    for (int sample = 0; sample < buffer.getNumSamples(); ++sample) {
+        params.smoothen();
         
-        for (int sample = 0; sample < buffer.getNumSamples(); ++sample) {
-            channelData[sample] *= gain;
-        }
+        channelDataL[sample] *= params.gain;
+        channelDataR[sample] *= params.gain;
     }
 }
 
@@ -158,17 +160,3 @@ juce::AudioProcessor* JUCE_CALLTYPE createPluginFilter()
 {
     return new DelayAudioProcessor();
 }
-
-juce::AudioProcessorValueTreeState::ParameterLayout DelayAudioProcessor::createParameterLayout()
-{
-    juce::AudioProcessorValueTreeState::ParameterLayout layout;
-    
-    layout.add(
-        std::make_unique<juce::AudioParameterFloat>(
-            gainParamID,
-            "Output Gain",
-            juce::NormalisableRange<float> { -12.0f, 12.0f },
-            0.0f));
-    return layout;
-}
-
