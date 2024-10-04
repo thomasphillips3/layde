@@ -45,6 +45,7 @@
 		68F722D2D3B030ED8401B3EF /* juce_VST3ManifestHelper.mm */ = {isa = PBXBuildFile; fileRef = E4F287BDBEE569EBED331470; settings = { COMPILER_FLAGS = "-fobjc-arc -w -DJUCE_SKIP_PRECOMPILED_HEADER"; }; };
 		68F8A9747B32A3E3443FEC36 /* VST3 */ = {isa = PBXBuildFile; fileRef = F6A0BD9FF8CDAF19931D6D7C; };
 		6A7E026D4FBB1A383C6892ED /* IOKit.framework */ = {isa = PBXBuildFile; fileRef = 51EEEBB42AA4EC2E2DC6F704; };
+		6C508B968CBDA9EFF1533331 /* include_juce_graphics_Sheenbidi.c */ = {isa = PBXBuildFile; fileRef = 8797CFF840FEE93363453D5A; };
 		7DC636CE2526C8FEA8B95C6B /* AudioUnit.framework */ = {isa = PBXBuildFile; fileRef = EBC137AD279B580D7EB3E1B1; };
 		8302B1232E14F200B3BAA2FD /* include_juce_audio_processors_lv2_libs.cpp */ = {isa = PBXBuildFile; fileRef = 3FA280620A47963A9993FDAD; };
 		89A28014E494BB938C8DD1BD /* include_juce_graphics.mm */ = {isa = PBXBuildFile; fileRef = 5A3781A0CB30CEA8467A5E47; };
@@ -103,6 +104,7 @@
 		6E2A8A5CE6B69AC4C01DA9D2 /* Cocoa.framework */ /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		723A25B38051D172C9640661 /* include_juce_core_CompilationTime.cpp */ /* include_juce_core_CompilationTime.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_core_CompilationTime.cpp; path = ../../JuceLibraryCode/include_juce_core_CompilationTime.cpp; sourceTree = SOURCE_ROOT; };
 		802355DED0D20BA56BF6DBFC /* Shared Code */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libDelay.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8797CFF840FEE93363453D5A /* include_juce_graphics_Sheenbidi.c */ /* include_juce_graphics_Sheenbidi.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; name = include_juce_graphics_Sheenbidi.c; path = ../../JuceLibraryCode/include_juce_graphics_Sheenbidi.c; sourceTree = SOURCE_ROOT; };
 		88714D1E7183A35395C0A457 /* Info-VST3_Manifest_Helper.plist */ /* Info-VST3_Manifest_Helper.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-VST3_Manifest_Helper.plist"; path = "Info-VST3_Manifest_Helper.plist"; sourceTree = SOURCE_ROOT; };
 		89400226BA3600494E44C359 /* include_juce_audio_plugin_client_AU_2.mm */ /* include_juce_audio_plugin_client_AU_2.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_audio_plugin_client_AU_2.mm; path = ../../JuceLibraryCode/include_juce_audio_plugin_client_AU_2.mm; sourceTree = SOURCE_ROOT; };
 		8A4D368F92CFDEF17785EA9B /* Info-AU.plist */ /* Info-AU.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = "Info-AU.plist"; path = "Info-AU.plist"; sourceTree = SOURCE_ROOT; };
@@ -310,6 +312,7 @@
 				2A0FFAC37DA10B44F69AB2AF,
 				5A3781A0CB30CEA8467A5E47,
 				1DDAB8E39616CBD4CB309459,
+				8797CFF840FEE93363453D5A,
 				4C039F74DE41023242DCBE9F,
 				FADEFF599E68A56921A7DDB5,
 				C8F8CBE1BF6E3F874524A446,
@@ -706,6 +709,7 @@
 				E04C438A35D12DF523AFFB7F,
 				89A28014E494BB938C8DD1BD,
 				8D1CCCCAA4277586A24EB07B,
+				6C508B968CBDA9EFF1533331,
 				33357540C67C8CC6AD2772C0,
 				609AF3BE4B4916BF0C92FE81,
 			);
@@ -809,7 +813,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_DEBUG=1",
 					"DEBUG=1",
-					"JUCE_PROJUCER_VERSION=0x80001",
+					"JUCE_PROJUCER_VERSION=0x80002",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -972,7 +976,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_DEBUG=1",
 					"DEBUG=1",
-					"JUCE_PROJUCER_VERSION=0x80001",
+					"JUCE_PROJUCER_VERSION=0x80002",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -1083,7 +1087,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_DEBUG=1",
 					"DEBUG=1",
-					"JUCE_PROJUCER_VERSION=0x80001",
+					"JUCE_PROJUCER_VERSION=0x80002",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -1195,7 +1199,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",
-					"JUCE_PROJUCER_VERSION=0x80001",
+					"JUCE_PROJUCER_VERSION=0x80002",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -1351,7 +1355,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_DEBUG=1",
 					"DEBUG=1",
-					"JUCE_PROJUCER_VERSION=0x80001",
+					"JUCE_PROJUCER_VERSION=0x80002",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -1458,7 +1462,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",
-					"JUCE_PROJUCER_VERSION=0x80001",
+					"JUCE_PROJUCER_VERSION=0x80002",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -1571,7 +1575,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",
-					"JUCE_PROJUCER_VERSION=0x80001",
+					"JUCE_PROJUCER_VERSION=0x80002",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -1683,7 +1687,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_DEBUG=1",
 					"DEBUG=1",
-					"JUCE_PROJUCER_VERSION=0x80001",
+					"JUCE_PROJUCER_VERSION=0x80002",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -1789,7 +1793,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",
-					"JUCE_PROJUCER_VERSION=0x80001",
+					"JUCE_PROJUCER_VERSION=0x80002",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
@@ -1897,7 +1901,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"_NDEBUG=1",
 					"NDEBUG=1",
-					"JUCE_PROJUCER_VERSION=0x80001",
+					"JUCE_PROJUCER_VERSION=0x80002",
 					"JUCE_MODULE_AVAILABLE_juce_audio_basics=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_devices=1",
 					"JUCE_MODULE_AVAILABLE_juce_audio_formats=1",
