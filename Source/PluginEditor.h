@@ -19,6 +19,7 @@ public:
 private:
     DelayAudioProcessor& audioProcessor;
     juce::Slider slider;
+    juce::Label label;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DelayAudioProcessorEditor)
 };
