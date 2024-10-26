@@ -43,4 +43,6 @@ private:
     
     float targetDelayTime = 0.0f;
     float coeff = 0.0f;     // used for one-pole smoothing
+    
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(Parameters);
 };
