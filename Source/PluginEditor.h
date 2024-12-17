@@ -2,6 +2,8 @@
 
 #include <JuceHeader.h>
 #include "PluginProcessor.h"
+#include "Parameters.h"
+#include "RotaryKnob.h"
 
 //==============================================================================
 /**
@@ -18,8 +20,9 @@ public:
 
 private:
     DelayAudioProcessor& audioProcessor;
-    juce::Slider slider;
-    juce::Label label;
-
+    
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DelayAudioProcessorEditor)
+    
+    RotaryKnob gainKnob { "Gain" , audioProcessor.apvts, gainParamID };
+
 };
