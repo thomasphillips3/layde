@@ -24,5 +24,7 @@ private:
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (DelayAudioProcessorEditor)
     
     RotaryKnob gainKnob { "Gain" , audioProcessor.apvts, gainParamID };
+    RotaryKnob mixKnob { "Mix", audioProcessor.apvts, mixParamID };
+    RotaryKnob delayTimeKnob { "Time", audioProcessor.apvts, delayTimeParamID };
 
 };
