@@ -71,6 +71,7 @@
 		F4A1FCF38FBFE771935A4520 /* Standalone Plugin */ = {isa = PBXBuildFile; fileRef = 9642FD8086CA85203A8D9650; };
 		F53CB189E79ED96B4A4EADB0 /* include_juce_audio_plugin_client_VST3.mm */ = {isa = PBXBuildFile; fileRef = EF200A711CE9B488CCFA0420; };
 		F916AD90C9C735586BE0BDAB /* include_juce_audio_processors_ara.cpp */ = {isa = PBXBuildFile; fileRef = 6965F47D111108B231A052E6; };
+		F9C63EB4EECD0C95B6E71D2C /* LookAndFeel.cpp */ = {isa = PBXBuildFile; fileRef = FDC7EF2A11E303A5A814F3E8; };
 		FD5CED525C20FA3469DBDF11 /* include_juce_audio_plugin_client_AU_2.mm */ = {isa = PBXBuildFile; fileRef = 89400226BA3600494E44C359; };
 		FE6E5219944445A22DEEF891 /* Metal.framework */ = {isa = PBXBuildFile; fileRef = 33B915033A644695FC89A49D; settings = { ATTRIBUTES = (Weak, ); }; };
 /* End PBXBuildFile section */
@@ -92,6 +93,7 @@
 		36753E06A17E258D52DB4C84 /* RotaryKnob.h */ /* RotaryKnob.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = RotaryKnob.h; path = ../../Source/RotaryKnob.h; sourceTree = SOURCE_ROOT; };
 		3D794A0126AC9CBE98EFED0C /* WebKit.framework */ /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		3FA280620A47963A9993FDAD /* include_juce_audio_processors_lv2_libs.cpp */ /* include_juce_audio_processors_lv2_libs.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = include_juce_audio_processors_lv2_libs.cpp; path = ../../JuceLibraryCode/include_juce_audio_processors_lv2_libs.cpp; sourceTree = SOURCE_ROOT; };
+		41140458CDF488148352EA40 /* LookAndFeel.h */ /* LookAndFeel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LookAndFeel.h; path = ../../Source/LookAndFeel.h; sourceTree = SOURCE_ROOT; };
 		419E772B837D0E52DAD99F13 /* CoreMIDI.framework */ /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		4C039F74DE41023242DCBE9F /* include_juce_gui_basics.mm */ /* include_juce_gui_basics.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_basics.mm; path = ../../JuceLibraryCode/include_juce_gui_basics.mm; sourceTree = SOURCE_ROOT; };
 		4D4A22C79B58C2B386B234A9 /* juce_events */ /* juce_events */ = {isa = PBXFileReference; lastKnownFileType = folder; name = juce_events; path = /Users/thomasphillips/workspace/JUCE/modules/juce_events; sourceTree = "<absolute>"; };
@@ -147,6 +149,7 @@
 		FADEFF599E68A56921A7DDB5 /* include_juce_gui_extra.mm */ /* include_juce_gui_extra.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_gui_extra.mm; path = ../../JuceLibraryCode/include_juce_gui_extra.mm; sourceTree = SOURCE_ROOT; };
 		FC72387F73EFDFAFF70DE08C /* include_juce_core.mm */ /* include_juce_core.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; name = include_juce_core.mm; path = ../../JuceLibraryCode/include_juce_core.mm; sourceTree = SOURCE_ROOT; };
 		FD4971BEE004C0809B711DDE /* Parameters.cpp */ /* Parameters.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = Parameters.cpp; path = ../../Source/Parameters.cpp; sourceTree = SOURCE_ROOT; };
+		FDC7EF2A11E303A5A814F3E8 /* LookAndFeel.cpp */ /* LookAndFeel.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = LookAndFeel.cpp; path = ../../Source/LookAndFeel.cpp; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -283,6 +286,8 @@
 		837A007D2EDF7A0B1C205367 /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				FDC7EF2A11E303A5A814F3E8,
+				41140458CDF488148352EA40,
 				FD4971BEE004C0809B711DDE,
 				53D8D3B745095F01E63BD378,
 				630FEFA1BE57629EF66D9B2A,
@@ -696,6 +701,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F9C63EB4EECD0C95B6E71D2C,
 				C6C93699A70D03875E3BA4C9,
 				DF2BA187B8A1ABF093F640B7,
 				4EE2B8962B3D53D414BD08E1,

@@ -6,6 +6,8 @@
               pluginDesc="delay" pluginManufacturerCode="Bomb" pluginCode="Layd">
   <MAINGROUP id="VtpoOO" name="Delay">
     <GROUP id="{74CB8045-400C-5BB6-65E8-C3BFE36D9C0A}" name="Source">
+      <FILE id="dKfoOB" name="LookAndFeel.cpp" compile="1" resource="0" file="Source/LookAndFeel.cpp"/>
+      <FILE id="RgXewV" name="LookAndFeel.h" compile="0" resource="0" file="Source/LookAndFeel.h"/>
       <FILE id="tjaAR7" name="Parameters.cpp" compile="1" resource="0" file="Source/Parameters.cpp"/>
       <FILE id="nFU4tG" name="Parameters.h" compile="0" resource="0" file="Source/Parameters.h"/>
       <FILE id="O7gnqB" name="PluginEditor.cpp" compile="1" resource="0"
