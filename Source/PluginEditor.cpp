@@ -4,6 +4,7 @@
 DelayAudioProcessorEditor::DelayAudioProcessorEditor (DelayAudioProcessor& p)
     : AudioProcessorEditor (&p), audioProcessor (p)
 {
+    auto lookAndFeel = RotaryKnobLookAndFeel::get();
     delayGroup.setText("Delay");
     delayGroup.setTextLabelPosition(juce::Justification::horizontallyCentred);
     delayGroup.addAndMakeVisible(delayTimeKnob);
@@ -20,6 +21,8 @@ DelayAudioProcessorEditor::DelayAudioProcessorEditor (DelayAudioProcessor& p)
     addAndMakeVisible(outputGroup);
     
     setSize (500, 330);
+    
+    setLookAndFeel(lookAndFeel);
 }
 
 DelayAudioProcessorEditor::~DelayAudioProcessorEditor()
@@ -28,7 +31,7 @@ DelayAudioProcessorEditor::~DelayAudioProcessorEditor()
 
 void DelayAudioProcessorEditor::paint (juce::Graphics& g)
 {
-    g.fillAll (juce::Colours::darkgreen);
+    g.fillAll (Colors::background);
 }
 
 void DelayAudioProcessorEditor::resized()

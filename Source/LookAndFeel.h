@@ -1,3 +1,5 @@
+#pragma once
+
 #include <JuceHeader.h>
 
 namespace Colors
@@ -19,4 +21,30 @@ namespace Colors
         const juce::Colour value { 240, 240, 240 };
         const juce::Colour caret { 255, 255, 255 };
     }
+
+    namespace Group
+    {
+        const juce::Colour label { 160, 155, 150 };
+        const juce::Colour outline { 235, 230, 225};
+    }
 }
+
+class RotaryKnobLookAndFeel : public juce::LookAndFeel_V4
+{
+public:
+    RotaryKnobLookAndFeel();
+    
+    static RotaryKnobLookAndFeel* get()
+    {
+        static RotaryKnobLookAndFeel instance;
+        return &instance;
+    }
+    
+    void drawRotarySlider(juce::Graphics& g, int x, int y, int width, int height, float sliderPos, float rotaryStartAngle, float rotaryEndAngle, juce::Slider& slider) override;
+    
+    void drawTextEditorOutline(juce::Graphics&, int, int, juce::TextEditor&) override { } 
+    
+private:
+    JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR(RotaryKnobLookAndFeel)
+    juce::DropShadow dropShadow { Colors::Knob::dropShadow, 6, { 0, 3 }};
+};
